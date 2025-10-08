@@ -39,6 +39,10 @@ body {
 
 }
 
+#contenuInformation{
+  min-height: 300px;
+}
+
 
 .optionsWidget {
     width: 450px;
