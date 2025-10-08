@@ -25,11 +25,11 @@ function basculerOptionsWidget() {
 }
 
 function MajDescriptionCarte() {
-  grist.widgetApi.setOption('description', document.getElementById('descriptionCarte').value);
+  grist.widgetApi.setOption('description', document.getElementById('majDescriptionCarte').value);
 }
 
 function MajTitreCarte() {
-  grist.widgetApi.setOption('titre', document.getElementById('TitreCarte').value);
+  grist.widgetApi.setOption('titre', document.getElementById('majTitreCarte').value);
 }
 
 grist.ready({
@@ -60,6 +60,8 @@ async function initCarte (){
   let carteFrance = new CarteFranceRegion();
   document.getElementById('carteFrance').appendChild(carteFrance.toSVG());
   CarteFranceRegion.activerInfoBulle();
+
+  console.log(await grist.widgetApi.getOptions());
 }
 
 initCarte();
