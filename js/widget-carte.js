@@ -14,6 +14,8 @@ let colonnesNecessaires = [
   {name: 'couleurFondRegion',title: "Couleur du fond de la région",type: 'Any', optional: false}
 ];
 
+let tableauRegion;
+let colonnes;
 
 function basculerOptionsWidget() {
 		const sidebar = document.getElementById('optionsWidget');
@@ -31,7 +33,10 @@ function MajTitreCarte() {
 }
 
 function majInformation(context) {
-  console.log(context.id);
+  //console.log(context.id);
+  document.getElementById('nomRegion').innerHTML = context.id;
+  document.getElementById('contenuInformation').innerHTML = tableauRegion.find(obj => obj[colonnes.region] === context.id)[colonnes.information];
+  document.getElementById('autreInformation').innerHTML ="";
 }
 
 grist.ready({
@@ -44,8 +49,8 @@ grist.ready({
 });
 
 async function initCarte (){
-  const tableauRegion = await grist.fetchSelectedTable({format: 'rows'});
-	const colonnes = await grist.sectionApi.mappings();
+  tableauRegion = await grist.fetchSelectedTable({format: 'rows'});
+	colonnes = await grist.sectionApi.mappings();
 
   let titreCarte = await grist.widgetApi.getOption('titre');
   let descriptionCarte = await grist.widgetApi.getOption('description');
