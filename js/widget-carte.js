@@ -15,10 +15,6 @@ let colonnesNecessaires = [
 ];
 
 
-
-
-
-
 function basculerOptionsWidget() {
 		const sidebar = document.getElementById('optionsWidget');
 		sidebar.classList.toggle('collapsed');
@@ -32,6 +28,10 @@ function MajDescriptionCarte() {
 function MajTitreCarte() {
   grist.widgetApi.setOption('titre', document.getElementById('majTitreCarte').value);
   document.getElementById('titreCarte').innerHTML = document.getElementById('majTitreCarte').value;
+}
+
+function majInformation(context) {
+  console.log(context.id);
 }
 
 grist.ready({
@@ -59,7 +59,7 @@ async function initCarte (){
       document.getElementById('majDescriptionCarte').placeholder = descriptionCarte;
   }
 
-  let carteFrance = new CarteFranceRegion();
+  let carteFrance = new CarteFranceRegion("majInformation(this)");
   document.getElementById('carteFrance').appendChild(carteFrance.toSVG());
   CarteFranceRegion.activerInfoBulle();
 

@@ -8,8 +8,13 @@ class CarteFranceRegion{
 	#viewBox = "0 0 675 570";
 	constructor(fonctionSurClique = null) {
 		this.listeRegions = [];
+		let regionTmp;
 		CarteFranceRegion.jsonRegions().forEach((region, i)=>{
-			this.listeRegions.push(new Region(region));
+			regionTmp = new Region(region);
+			if (fonctionSurClique){
+				regionTmp.ajouterFonctionClique(fonctionSurClique)
+			}
+			this.listeRegions.push(regionTmp);
 		});
 	}
 
