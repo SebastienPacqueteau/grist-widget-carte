@@ -83,10 +83,10 @@ class Region{
 	#couleurBordure = "#000000";
 	#tailleBordure = 1;
 	#legende = "";
-	#fonctionSurClique = "";
 	constructor(jsonCollectivites) {
 		this.nom = jsonCollectivites.nom;
 		this.path = jsonCollectivites.path;
+		this.fonctionSurClique = "";
 	}
 
 	modifierLegende(legendeHTML){
@@ -98,7 +98,7 @@ class Region{
 	}
 
 	ajouterFonctionClique(nomFonction){
-		this.#fonctionSurClique = nomFonction;
+		this.fonctionSurClique = nomFonction;
 	}
 
 	toSVG() {
@@ -119,7 +119,7 @@ class Region{
 				baliseTmp.setAttribute("data-bs-html", "true");
 				baliseTmp.setAttribute("title", this.#legende);
 			}
-			if (this.#fonctionSurClique){baliseTmp.setAttribute("onclick", this.#fonctionSurClique);}
+			if (this.fonctionSurClique){baliseTmp.setAttribute("onclick", this.fonctionSurClique);}
 
 			balises.push(baliseTmp);
 		});
