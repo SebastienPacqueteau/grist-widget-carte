@@ -10,7 +10,7 @@ let colonnesNecessaires = [
 		optional: false // if column is optional.
 	},
   {name: 'information',title: "Information à afficher",type: 'Any',optional: false},
-  {name: 'infoBulle',title: "Service",type: 'Any', optional: false},
+  {name: 'infoBulle',title: "Contenu de l'infoBulle",type: 'Any', optional: false},
   {name: 'couleurFondRegion',title: "Couleur du fond de la région",type: 'Any', optional: false}
 ];
 
@@ -49,10 +49,12 @@ async function initCarte (){
   let descriptionCarte = await grist.widgetApi.getOption('description');
   //mettre le contenu des options
   if (titreCarte){
-    document.getElementById('TitreCarte').placeholder = titreCarte;
+    document.getElementById('titreCarte').innerHTML = titreCarte;
+      document.getElementById('majTitreCarte').placeholder = titreCarte;
   }
   if (descriptionCarte){
-    document.getElementById('TitreCarte').descriptionCarte = descriptionCarte;
+    document.getElementById('descriptionCarte').innerHTML = descriptionCarte;
+      document.getElementById('majDescriptionCarte').placeholder = descriptionCarte;
   }
 
   let carteFrance = new CarteFranceRegion();

@@ -16,7 +16,7 @@ body {
   font-size: 15px;
 }
 
-.titre {
+#titre {
   color: #000;
   text-align: center;
   margin-top : calc(5vh);
@@ -26,6 +26,13 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+#description {
+  color: #000;
+  text-align: left;
+
+  font-family: Marianne;
 }
 
 #carteFrance{

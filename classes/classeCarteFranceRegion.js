@@ -54,7 +54,7 @@ class CarteFranceRegion{
 	}
 
 	static jsonRegions(){
-		const urlJsonRegions = "https://sebastienpacqueteau.github.io/carteFrance/regions/regions.json";
+		const urlJsonRegions = "https://sebastienpacqueteau.github.io/grist-widget-carte/cartes/regions.json";
 		let xhttp = new XMLHttpRequest();
 		let regions;
 		xhttp.onreadystatechange = function() {
