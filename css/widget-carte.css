@@ -16,7 +16,7 @@ body {
   font-size: 15px;
 }
 
-#titre {
+#titreCarte {
   color: #000;
   text-align: center;
   margin-top : calc(5vh);
@@ -28,7 +28,7 @@ body {
   line-height: normal;
 }
 
-#description {
+#descriptionCarte {
   color: #000;
   text-align: left;
 
