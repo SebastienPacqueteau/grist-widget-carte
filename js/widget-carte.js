@@ -35,7 +35,7 @@ function MajTitreCarte() {
 function majInformation(context) {
   //console.log(context.id);
   document.getElementById('nomRegion').innerHTML = context.id;
-  document.getElementById('contenuInformation').innerHTML = tableauRegion.find(obj => obj[colonnes.region] === context.id)[colonnes.information];
+  document.getElementById('contenuInformation').innerHTML = mmd(tableauRegion.find(obj => obj[colonnes.region] === context.id)[colonnes.information]);
   document.getElementById('autreInformation').innerHTML ="";
 }
 
