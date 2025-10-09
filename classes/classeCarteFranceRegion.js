@@ -6,6 +6,7 @@ class CarteFranceRegion{
 
 	#objectFit = "contain";
 	#viewBox = "0 0 675 570";
+	#svg;
 	constructor(fonctionSurClique = null) {
 		this.listeRegions = [];
 		let regionTmp;
@@ -20,17 +21,19 @@ class CarteFranceRegion{
 
 
 	toSVG(){
-		let balisesSVG = document.createElementNS("http://www.w3.org/2000/svg",'svg');
-		balisesSVG.style.objectFit = this.#objectFit;
-		balisesSVG.setAttribute("viewBox", this.#viewBox);
+		if (!this.#svg){
+			this.#svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
+			this.#svg.style.objectFit = this.#objectFit;
+			this.#svg.setAttribute("viewBox", this.#viewBox);
 
-		this.listeRegions.forEach((region,i) => {
-			region.modifierLegende(region.nom);
-			region.toSVG().forEach((balise, j)=>{
-				balisesSVG.appendChild(balise);
+			this.listeRegions.forEach((region,i) => {
+				region.modifierLegende(region.nom);
+				region.toSVG().forEach((balise, j)=>{
+					this.#svg.appendChild(balise);
+				});
 			});
-		});
-		return balisesSVG;
+		}
+		return this.#svg;
 	}
 
 
@@ -49,6 +52,10 @@ class CarteFranceRegion{
 
 	ajouterFonctionClique(nomRegion, nomFonction){
 		this.recupererRegion(nomRegion).ajouterFonctionClique(nomFonction);
+	}	
+	
+	ajouterBaliseTexte(nomRegion, textAAfficher){
+		this.#svg.appendChild(this.recupererRegion(nomRegion).ajouterBaliseTexte(textAAfficher));
 	}
 
 	static activerInfoBulle(){
@@ -86,6 +93,8 @@ class Region{
 	constructor(jsonCollectivites) {
 		this.nom = jsonCollectivites.nom;
 		this.path = jsonCollectivites.path;
+		this.text_x = jsonCollectivites.text_x;
+		this.text_y = jsonCollectivites.text_y;
 		this.fonctionSurClique = "";
 	}
 
@@ -125,5 +134,16 @@ class Region{
 		});
 
 		return balises;
+	}
+
+	ajouterBaliseTexte(textAAfficher){
+		let balise = document.createElementNS("http://www.w3.org/2000/svg",'text');
+		balise.setAttribute("x", this.#fillRule);
+		balise.setAttribute("y", this.#clipRule);
+		balise.setAttribute("text-anchor", "middle");
+		balise.setAttribute("alignment-baseline", "middle");
+		balise.setAttribute("font-family", "Marianne");
+		balise.innerHTML = textAAfficher;
+		return balise;
 	}
 }
