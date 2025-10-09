@@ -11,6 +11,7 @@ let colonnesNecessaires = [
 	},
   {name: 'information',title: "Information à afficher",type: 'Any',optional: false},
   {name: 'infoBulle',title: "Contenu de l'infoBulle",type: 'Any', optional: false},
+  {name: 'textCarte',title: "le texte au milieu de chaque Region",type: 'Any', optional: false},
   {name: 'couleurFondRegion',title: "Couleur du fond de la région",type: 'Any', optional: false}
 ];
 
@@ -51,25 +52,33 @@ grist.ready({
 
 async function initCarte (){
   tableauRegion = await grist.fetchSelectedTable({format: 'rows'});
-	colonnes = await grist.sectionApi.mappings();
+  colonnes = await grist.sectionApi.mappings();
 
   let titreCarte = await grist.widgetApi.getOption('titre');
   let descriptionCarte = await grist.widgetApi.getOption('description');
   //mettre le contenu des options
   if (titreCarte){
     document.getElementById('titreCarte').innerHTML = titreCarte;
-      document.getElementById('majTitreCarte').placeholder = titreCarte;
+    document.getElementById('majTitreCarte').placeholder = titreCarte;
   }
   if (descriptionCarte){
     document.getElementById('descriptionCarte').innerHTML = descriptionCarte;
-      document.getElementById('majDescriptionCarte').placeholder = descriptionCarte;
+    document.getElementById('majDescriptionCarte').placeholder = descriptionCarte;
   }
 
   let carteFrance = new CarteFranceRegion("majInformation(this)");
+  tableauRegion.forEach((region, i)=>{
+	if (region[colonnes.couleurFondRegion]){carteFrance.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.couleurFondRegion]);}
+	if (region[colonnes.InfoBulle]){carteFrance.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.InfoBulle]);}
+  });
+  carteFrance.toSVG();
+  tableauRegion.forEach((region, i)=>{
+	if (region[colonnes.textCarte]){carteFrance.ajouterBaliseTexte(region[colonnes.region], region[colonnes.textCarte]);}
+  });
   document.getElementById('carteFrance').appendChild(carteFrance.toSVG());
   CarteFranceRegion.activerInfoBulle();
 
-  console.log(await grist.widgetApi.getOptions(), tableauRegion);
+  //console.log(await grist.widgetApi.getOptions(), tableauRegion);
 }
 
 initCarte();
