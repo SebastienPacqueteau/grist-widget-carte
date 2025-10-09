@@ -138,8 +138,8 @@ class Region{
 
 	ajouterBaliseTexte(textAAfficher){
 		let balise = document.createElementNS("http://www.w3.org/2000/svg",'text');
-		balise.setAttribute("x", this.#fillRule);
-		balise.setAttribute("y", this.#clipRule);
+		balise.setAttribute("x", this.text_x);
+		balise.setAttribute("y", this.text_y);
 		balise.setAttribute("text-anchor", "middle");
 		balise.setAttribute("alignment-baseline", "middle");
 		balise.setAttribute("font-family", "Marianne");
