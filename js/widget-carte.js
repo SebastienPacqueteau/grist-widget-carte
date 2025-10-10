@@ -17,6 +17,7 @@ let colonnesNecessaires = [
 
 let tableauRegion;
 let colonnes;
+let typeCarte;
 
 function basculerOptionsWidget() {
 		const sidebar = document.getElementById('optionsWidget');
@@ -26,6 +27,34 @@ function basculerOptionsWidget() {
 function MajDescriptionCarte() {
   grist.widgetApi.setOption('description', document.getElementById('majDescriptionCarte').value);
   document.getElementById('descriptionCarte').innerHTML = document.getElementById('majDescriptionCarte').value;
+}
+
+function choixTypeCarte() {
+  const nouvelIndexChoixCarte = document.getElementById('typeCarte').selectedIndex;
+  if (!typeCarte){
+    creerCarte(document.getElementById('typeCarte').options[nouvelIndexChoixCarte].value);
+  }
+  grist.widgetApi.setOption('typeCarte', nouvelIndexChoixCarte);
+}
+
+function creerCarte(option) {
+  let carte ;
+  if (option == "CarteFranceRegion"){
+      carte = new CarteFranceRegion("majInformation(this)");
+      tableauRegion.forEach((region, i)=>{
+      if (region[colonnes.couleurFondRegion]){carte.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.couleurFondRegion]);}
+      if (region[colonnes.InfoBulle]){carte.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.InfoBulle]);}
+      });
+      carte.toSVG();
+      tableauRegion.forEach((region, i)=>{
+      if (region[colonnes.textCarte]){carte.ajouterBaliseTexte(region[colonnes.region], region[colonnes.textCarte]);}
+      });
+      document.getElementById('divCarte').appendChild(carte.toSVG());
+      CarteFranceRegion.activerInfoBulle();
+  }
+  else if (option == "CarteFranceRegion"){
+      carte = new CarteFranceDept("majInformation(this)");
+  }
 }
 
 function MajTitreCarte() {
@@ -56,6 +85,7 @@ async function initCarte (){
 
   let titreCarte = await grist.widgetApi.getOption('titre');
   let descriptionCarte = await grist.widgetApi.getOption('description');
+  typeCarte = await grist.widgetApi.getOption('typeCarte');
   //mettre le contenu des options
   if (titreCarte){
     document.getElementById('titreCarte').innerHTML = titreCarte;
@@ -66,19 +96,10 @@ async function initCarte (){
     document.getElementById('majDescriptionCarte').placeholder = descriptionCarte;
   }
 
-  let carteFrance = new CarteFranceRegion("majInformation(this)");
-  tableauRegion.forEach((region, i)=>{
-	if (region[colonnes.couleurFondRegion]){carteFrance.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.couleurFondRegion]);}
-	if (region[colonnes.InfoBulle]){carteFrance.modifierCouleurFondRegion(region[colonnes.region], region[colonnes.InfoBulle]);}
-  });
-  carteFrance.toSVG();
-  tableauRegion.forEach((region, i)=>{
-	if (region[colonnes.textCarte]){carteFrance.ajouterBaliseTexte(region[colonnes.region], region[colonnes.textCarte]);}
-  });
-  document.getElementById('carteFrance').appendChild(carteFrance.toSVG());
-  CarteFranceRegion.activerInfoBulle();
-
-  //console.log(await grist.widgetApi.getOptions(), tableauRegion);
+  if (typeCarte){
+    const nomOption = document.getElementById('typeCarte').options[typeCarte].value;
+    creerCarte(nomOption);
+  }
 }
 
 initCarte();
