@@ -7,14 +7,14 @@ class CarteFranceDept{
   #viewBox = "0 0 675 570";
   #svg;
   constructor(fonctionSurClique = null) {
-    this.listeDepartement = [];
+    this.listeDepartements = [];
   	let departementTmp;
   	CarteFranceDept.jsonDepartements().forEach((departement, i)=>{
       departementTmp = new Departement(departement);
   		if (fonctionSurClique){
   			departementTmp.ajouterFonctionClique(fonctionSurClique)
   		}
-  		this.listeDepartements.push(departementTmp);
+      this.listeDepartements.push(departementTmp);
   	});
   }
 
