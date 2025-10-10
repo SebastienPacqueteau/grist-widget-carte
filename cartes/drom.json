@@ -1,6 +1,7 @@
 [
   {
     "nom": "Guadeloupe",
+    "region": "Guadeloupe",
     "text_x": "45",
     "text_y": "130",
     "code_INSEE":"971",
@@ -10,6 +11,7 @@
   },
   {
     "nom": "Martinique",
+    "region": "Martinique",
     "code_INSEE":"972",
     "text_x": "45",
     "text_y": "200",
@@ -17,6 +19,7 @@
   },
   {
     "nom": "Guyane",
+    "region": "Guyane",
     "code_INSEE":"973",
     "text_x": "45",
     "text_y": "400",
@@ -24,6 +27,7 @@
   },
   {
     "nom": "La Réunion",
+    "region": "La Réunion",
     "code_INSEE":"974",
     "text_x": "45",
     "text_y": "40",
@@ -31,6 +35,7 @@
   },
   {
     "nom": "Mayotte",
+    "region": "Mayotte",
     "code_INSEE":"976",
     "text_x": "45",
     "text_y": "290",

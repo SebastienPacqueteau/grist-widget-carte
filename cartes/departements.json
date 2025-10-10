@@ -1,7 +1,7 @@
 [
   {
     "nom": "Ain",
-    "numero": "1",
+    "code_INSEE": "1",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -9,7 +9,7 @@
   },
   {
     "nom": "Allier",
-    "numero": "3",
+    "code_INSEE": "3",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -17,7 +17,7 @@
   },
   {
     "nom": "Ardèche",
-    "numero": "7",
+    "code_INSEE": "7",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -25,7 +25,7 @@
   },
   {
     "nom": "Cantal",
-    "numero": "15",
+    "code_INSEE": "15",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -33,7 +33,7 @@
   },
   {
     "nom": "Drôme",
-    "numero": "26",
+    "code_INSEE": "26",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -41,7 +41,7 @@
   },
   {
     "nom": "Isère",
-    "numero": "38",
+    "code_INSEE": "38",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -49,7 +49,7 @@
   },
   {
     "nom": "Loire",
-    "numero": "42",
+    "code_INSEE": "42",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -57,7 +57,7 @@
   },
   {
     "nom": "Haute-Loire",
-    "numero": "43",
+    "code_INSEE": "43",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -65,7 +65,7 @@
   },
   {
     "nom": "Puy-de-Dôme",
-    "numero": "63",
+    "code_INSEE": "63",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -73,7 +73,7 @@
   },
   {
     "nom": "Rhône",
-    "numero": "69",
+    "code_INSEE": "69",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -81,7 +81,7 @@
   },
   {
     "nom": "Savoie",
-    "numero": "73",
+    "code_INSEE": "73",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -89,7 +89,7 @@
   },
   {
     "nom": "Haute-Savoie",
-    "numero": "74",
+    "code_INSEE": "74",
     "region": "Auvergne-Rhône-Alpes",
     "text_x": "",
     "text_y": "",
@@ -97,7 +97,7 @@
   },
   {
     "nom": "Côte-d'Or",
-    "numero": "21",
+    "code_INSEE": "21",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -105,7 +105,7 @@
   },
   {
     "nom": "Doubs",
-    "numero": "25",
+    "code_INSEE": "25",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -113,7 +113,7 @@
   },
   {
     "nom": "Jura",
-    "numero": "39",
+    "code_INSEE": "39",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -121,7 +121,7 @@
   },
   {
     "nom": "Nièvre",
-    "numero": "58",
+    "code_INSEE": "58",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -129,7 +129,7 @@
   },
   {
     "nom": "Haute-Saône",
-    "numero": "70",
+    "code_INSEE": "70",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -137,7 +137,7 @@
   },
   {
     "nom": "Saône-et-Loire",
-    "numero": "71",
+    "code_INSEE": "71",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -145,7 +145,7 @@
   },
   {
     "nom": "Yonne",
-    "numero": "89",
+    "code_INSEE": "89",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -153,7 +153,7 @@
   },
   {
     "nom": "Territoire de Belfort",
-    "numero": "90",
+    "code_INSEE": "90",
     "region": "Bourgogne-Franche-Comté",
     "text_x": "",
     "text_y": "",
@@ -161,7 +161,7 @@
   },
   {
     "nom": "Côtes-d'Armor",
-    "numero": "22",
+    "code_INSEE": "22",
     "region": "Bretagne",
     "text_x": "",
     "text_y": "",
@@ -169,7 +169,7 @@
   },
   {
     "nom": "Finistère",
-    "numero": "29",
+    "code_INSEE": "29",
     "region": "Bretagne",
     "text_x": "",
     "text_y": "",
@@ -177,7 +177,7 @@
   },
   {
     "nom": "Ille-et-Vilaine",
-    "numero": "35",
+    "code_INSEE": "35",
     "region": "Bretagne",
     "text_x": "",
     "text_y": "",
@@ -185,7 +185,7 @@
   },
   {
     "nom": "Morbihan",
-    "numero": "56",
+    "code_INSEE": "56",
     "region": "Bretagne",
     "text_x": "",
     "text_y": "",
@@ -193,7 +193,7 @@
   },
   {
     "nom": "Corse-du-Sud",
-    "numero": "2A",
+    "code_INSEE": "2A",
     "region": "Corse",
     "text_x": "",
     "text_y": "",
@@ -201,7 +201,7 @@
   },
   {
     "nom": "Haute-Corse",
-    "numero": "2B",
+    "code_INSEE": "2B",
     "region": "Corse",
     "text_x": "",
     "text_y": "",
@@ -209,7 +209,7 @@
   },
   {
     "nom": "Cher",
-    "numero": "18",
+    "code_INSEE": "18",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -217,7 +217,7 @@
   },
   {
     "nom": "Eure-et-Loir",
-    "numero": "28",
+    "code_INSEE": "28",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -225,7 +225,7 @@
   },
   {
     "nom": "Indre",
-    "numero": "36",
+    "code_INSEE": "36",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -233,7 +233,7 @@
   },
   {
     "nom": "Indre-et-Loire",
-    "numero": "37",
+    "code_INSEE": "37",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -241,7 +241,7 @@
   },
   {
     "nom": "Loir-et-Cher",
-    "numero": "41",
+    "code_INSEE": "41",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -249,7 +249,7 @@
   },
   {
     "nom": "Loiret",
-    "numero": "45",
+    "code_INSEE": "45",
     "region": "Centre-Val de Loir",
     "text_x": "",
     "text_y": "",
@@ -257,7 +257,7 @@
   },
   {
     "nom": "Ardennes",
-    "numero": "8",
+    "code_INSEE": "8",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -265,7 +265,7 @@
   },
   {
     "nom": "Aube",
-    "numero": "10",
+    "code_INSEE": "10",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -273,7 +273,7 @@
   },
   {
     "nom": "Marne",
-    "numero": "51",
+    "code_INSEE": "51",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -281,7 +281,7 @@
   },
   {
     "nom": "Haute-Marne",
-    "numero": "52",
+    "code_INSEE": "52",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -289,7 +289,7 @@
   },
   {
     "nom": "Meurthe-et-Moselle",
-    "numero": "54",
+    "code_INSEE": "54",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -297,7 +297,7 @@
   },
   {
     "nom": "Meuse",
-    "numero": "55",
+    "code_INSEE": "55",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -305,7 +305,7 @@
   },
   {
     "nom": "Moselle",
-    "numero": "57",
+    "code_INSEE": "57",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -313,7 +313,7 @@
   },
   {
     "nom": "Bas-Rhin",
-    "numero": "67",
+    "code_INSEE": "67",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -321,7 +321,7 @@
   },
   {
     "nom": "Haut-Rhin",
-    "numero": "68",
+    "code_INSEE": "68",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -329,7 +329,7 @@
   },
   {
     "nom": "Vosges",
-    "numero": "88",
+    "code_INSEE": "88",
     "region": "Grand Est",
     "text_x": "",
     "text_y": "",
@@ -337,7 +337,7 @@
   },
   {
     "nom": "Aisne",
-    "numero": "2",
+    "code_INSEE": "2",
     "region": "Hauts-de-France",
     "text_x": "",
     "text_y": "",
@@ -345,7 +345,7 @@
   },
   {
     "nom": "Nord",
-    "numero": "59",
+    "code_INSEE": "59",
     "region": "Hauts-de-France",
     "text_x": "",
     "text_y": "",
@@ -353,7 +353,7 @@
   },
   {
     "nom": "Oise",
-    "numero": "60",
+    "code_INSEE": "60",
     "region": "Hauts-de-France",
     "text_x": "",
     "text_y": "",
@@ -361,7 +361,7 @@
   },
   {
     "nom": "Pas-de-Calais",
-    "numero": "62",
+    "code_INSEE": "62",
     "region": "Hauts-de-France",
     "text_x": "",
     "text_y": "",
@@ -369,7 +369,7 @@
   },
   {
     "nom": "Somme",
-    "numero": "80",
+    "code_INSEE": "80",
     "region": "Hauts-de-France",
     "text_x": "",
     "text_y": "",
@@ -377,7 +377,7 @@
   },
   {
     "nom": "Paris",
-    "numero": "75",
+    "code_INSEE": "75",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -386,7 +386,7 @@
   },
   {
     "nom": "Seine-et-Marne",
-    "numero": "77",
+    "code_INSEE": "77",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -394,7 +394,7 @@
   },
   {
     "nom": "Yvelines",
-    "numero": "78",
+    "code_INSEE": "78",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -402,7 +402,7 @@
   },
   {
     "nom": "Essonne",
-    "numero": "91",
+    "code_INSEE": "91",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -410,7 +410,7 @@
   },
   {
     "nom": "Hauts-de-Seine",
-    "numero": "92",
+    "code_INSEE": "92",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -419,7 +419,7 @@
   },
   {
     "nom": "Seine-St-Denis",
-    "numero": "93",
+    "code_INSEE": "93",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -428,7 +428,7 @@
   },
   {
     "nom": "Val-de-Marne",
-    "numero": "94",
+    "code_INSEE": "94",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -437,7 +437,7 @@
   },
   {
     "nom": "Val-D'Oise",
-    "numero": "95",
+    "code_INSEE": "95",
     "region": "Ile-de-France",
     "text_x": "",
     "text_y": "",
@@ -445,7 +445,7 @@
   },
  {
     "nom": "Charente",
-    "numero": "16",
+    "code_INSEE": "16",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -453,7 +453,7 @@
   },
   {
     "nom": "Charente-Maritime",
-    "numero": "17",
+    "code_INSEE": "17",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -461,7 +461,7 @@
   },
   {
     "nom": "Corrèze",
-    "numero": "19",
+    "code_INSEE": "19",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -469,7 +469,7 @@
   },
   {
     "nom": "Creuse",
-    "numero": "23",
+    "code_INSEE": "23",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -477,7 +477,7 @@
   },
   {
     "nom": "Dordogne",
-    "numero": "24",
+    "code_INSEE": "24",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -485,7 +485,7 @@
   },
   {
     "nom": "Gironde",
-    "numero": "33",
+    "code_INSEE": "33",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -493,7 +493,7 @@
   },
   {
     "nom": "Landes",
-    "numero": "40",
+    "code_INSEE": "40",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -501,7 +501,7 @@
   },
   {
     "nom": "Lot-et-Garonne",
-    "numero": "47",
+    "code_INSEE": "47",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -509,7 +509,7 @@
   },
   {
     "nom": "Pyrénées-Atlantiques",
-    "numero": "64",
+    "code_INSEE": "64",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -517,7 +517,7 @@
   },
   {
     "nom": "Deux-Sèvres",
-    "numero": "79",
+    "code_INSEE": "79",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -525,7 +525,7 @@
   },
   {
     "nom": "Vienne",
-    "numero": "86",
+    "code_INSEE": "86",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -533,7 +533,7 @@
   },
   {
     "nom": "Haute-Vienne",
-    "numero": "87",
+    "code_INSEE": "87",
     "region": "Nouvelle-Aquitaine",
     "text_x": "",
     "text_y": "",
@@ -541,7 +541,7 @@
   },
   {
     "nom": "Calvados",
-    "numero": "14",
+    "code_INSEE": "14",
     "region": "Normandie",
     "text_x": "",
     "text_y": "",
@@ -549,7 +549,7 @@
   },
   {
     "nom": "Eure",
-    "numero": "27",
+    "code_INSEE": "27",
     "region": "Normandie",
     "text_x": "",
     "text_y": "",
@@ -557,7 +557,7 @@
   },
   {
     "nom": "Manche",
-    "numero": "50",
+    "code_INSEE": "50",
     "region": "Normandie",
     "text_x": "",
     "text_y": "",
@@ -565,7 +565,7 @@
   },
   {
     "nom": "Orne",
-    "numero": "61",
+    "code_INSEE": "61",
     "region": "Normandie",
     "text_x": "",
     "text_y": "",
@@ -573,7 +573,7 @@
   },
   {
     "nom": "Seine-Maritime",
-    "numero": "76",
+    "code_INSEE": "76",
     "region": "Normandie",
     "text_x": "",
     "text_y": "",
@@ -581,7 +581,7 @@
   },
   {
     "nom": "Ariège",
-    "numero": "9",
+    "code_INSEE": "9",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -589,7 +589,7 @@
   },
   {
     "nom": "Aude",
-    "numero": "11",
+    "code_INSEE": "11",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -597,7 +597,7 @@
   },
   {
     "nom": "Aveyron",
-    "numero": "12",
+    "code_INSEE": "12",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -605,7 +605,7 @@
   },
   {
     "nom": "Gard",
-    "numero": "30",
+    "code_INSEE": "30",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -613,7 +613,7 @@
   },
   {
     "nom": "Haute-Garonne",
-    "numero": "31",
+    "code_INSEE": "31",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -621,7 +621,7 @@
   },
   {
     "nom": "Gers",
-    "numero": "32",
+    "code_INSEE": "32",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -629,7 +629,7 @@
   },
   {
     "nom": "Hérault",
-    "numero": "34",
+    "code_INSEE": "34",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -637,7 +637,7 @@
   },
   {
     "nom": "Lot",
-    "numero": "46",
+    "code_INSEE": "46",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -645,7 +645,7 @@
   },
   {
     "nom": "Lozère",
-    "numero": "48",
+    "code_INSEE": "48",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -653,7 +653,7 @@
   },
   {
     "nom": "Hautes-Pyrénées",
-    "numero": "65",
+    "code_INSEE": "65",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -661,7 +661,7 @@
   },
   {
     "nom": "Pyrénées-Orientales",
-    "numero": "66",
+    "code_INSEE": "66",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -669,7 +669,7 @@
   },
   {
     "nom": "Tarn",
-    "numero": "81",
+    "code_INSEE": "81",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -677,7 +677,7 @@
   },
   {
     "nom": "Tarn-et-Garonne",
-    "numero": "82",
+    "code_INSEE": "82",
     "region": "Occitanie",
     "text_x": "",
     "text_y": "",
@@ -685,7 +685,7 @@
   },
   {
     "nom": "Alpes-de-Haute-Provence",
-    "numero": "4",
+    "code_INSEE": "4",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -693,7 +693,7 @@
   },
   {
     "nom": "Hautes-Alpes",
-    "numero": "5",
+    "code_INSEE": "5",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -701,7 +701,7 @@
   },
   {
     "nom": "Alpes-Maritimes",
-    "numero": "6",
+    "code_INSEE": "6",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -709,7 +709,7 @@
   },
   {
     "nom": "Bouches-du-Rhône",
-    "numero": "13",
+    "code_INSEE": "13",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -717,7 +717,7 @@
   },
   {
     "nom": "Var",
-    "numero": "83",
+    "code_INSEE": "83",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -725,7 +725,7 @@
   },
   {
     "nom": "Vaucluse",
-    "numero": "84",
+    "code_INSEE": "84",
     "region": "Provence-Alpes-Côte d'Azur",
     "text_x": "",
     "text_y": "",
@@ -733,7 +733,7 @@
   },
   {
     "nom": "Loire-Atlantique",
-    "numero": "44",
+    "code_INSEE": "44",
     "region": "Pays de la Loire",
     "text_x": "",
     "text_y": "",
@@ -741,7 +741,7 @@
   },
   {
     "nom": "Maine-et-Loire",
-    "numero": "49",
+    "code_INSEE": "49",
     "region": "Pays de la Loire",
     "text_x": "",
     "text_y": "",
@@ -749,7 +749,7 @@
   },
   {
     "nom": "Mayenne",
-    "numero": "53",
+    "code_INSEE": "53",
     "region": "Pays de la Loire",
     "text_x": "",
     "text_y": "",
@@ -757,7 +757,7 @@
   },
   {
     "nom": "Sarthe",
-    "numero": "72",
+    "code_INSEE": "72",
     "region": "Pays de la Loire",
     "text_x": "",
     "text_y": "",
@@ -765,7 +765,7 @@
   },
   {
     "nom": "Vendée",
-    "numero": "85",
+    "code_INSEE": "85",
     "region": "Pays de la Loire",
     "text_x": "",
     "text_y": "",
