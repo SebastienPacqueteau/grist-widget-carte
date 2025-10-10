@@ -6,10 +6,17 @@ class CarteFranceDept{
   #objectFit = "contain";
   #viewBox = "0 0 675 570";
   #svg;
-  constructor(fonctionSurClique = null) {
+  constructor(ajouterDrom = null, fonctionSurClique = null) {
     this.listeDepartements = [];
   	let departementTmp;
   	CarteFranceDept.jsonDepartements().forEach((departement, i)=>{
+      departementTmp = new Departement(departement);
+  		if (fonctionSurClique){
+  			departementTmp.ajouterFonctionClique(fonctionSurClique)
+  		}
+      this.listeDepartements.push(departementTmp);
+  	});
+  	CarteFranceDept.jsonDrom().forEach((departement, i)=>{
       departementTmp = new Departement(departement);
   		if (fonctionSurClique){
   			departementTmp.ajouterFonctionClique(fonctionSurClique)
@@ -76,6 +83,22 @@ class CarteFranceDept{
 		xhttp.send();
 		return departements;
 	}
+
+  static jsonDrom(){
+    const urlJsonDepartements = "https://sebastienpacqueteau.github.io/grist-widget-carte/cartes/drom.json";
+		let xhttp = new XMLHttpRequest();
+		let departements;
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			   // Typical action to be performed when the document is ready:
+			   departements = JSON.parse(xhttp.response);
+			   //console.log(departements);
+			}
+		};
+		xhttp.open("GET", urlJsonDepartements, false);
+		xhttp.send();
+		return departements;
+	}
 }
 
 
@@ -124,7 +147,7 @@ class CarteFranceDept{
   				baliseTmp.setAttribute("data-bs-toggle", "tooltip");
   				baliseTmp.setAttribute("data-bs-placement", "right");
   				baliseTmp.setAttribute("data-bs-html", "true");
-          baliseTmp.setAttribute("data-region", "true");
+          baliseTmp.setAttribute("data-region", this.region);
   				baliseTmp.setAttribute("title", this.#legende);
   			}
   			if (this.fonctionSurClique){baliseTmp.setAttribute("onclick", this.fonctionSurClique);}
