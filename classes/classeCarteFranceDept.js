@@ -32,7 +32,7 @@ class CarteFranceDept{
 			this.#svg.setAttribute("viewBox", this.#viewBox);
 
 			this.listeDepartements.forEach((departement,i) => {
-				departement.modifierLegende(departement.nom);
+				//departement.modifierLegende(departement.nom);
 				departement.toSVG().forEach((balise, j)=>{
 					this.#svg.appendChild(balise);
 				});
