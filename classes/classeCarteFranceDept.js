@@ -41,24 +41,24 @@ class CarteFranceDept{
 		return this.#svg;
 	}
 
-  recupererDepartement(nomDepartement){
-		return this.listeDepartements.find(i => i.nom === nomDepartement);
+  recupererDepartement(numDept){
+		return this.listeDepartements.find(i => i.numero == numDept);
 	}
 
-	modifierLegendeDepartement(nomDepartement, nouvelleLegende){
-		this.recupererDepartement(nomDepartement).modifierLegende(nouvelleLegende);
+	modifierLegendeDepartement(numDept, nouvelleLegende){
+		this.recupererDepartement(numDept).modifierLegende(nouvelleLegende);
 	}
 
-	modifierCouleurFondDepartement(nomDepartement, nouvelleCouleur){
-		this.recupererDepartement(nomDepartement).modifierCouleurFond(nouvelleCouleur);
+	modifierCouleurFondDepartement(numDept, nouvelleCouleur){
+		this.recupererDepartement(numDept).modifierCouleurFond(nouvelleCouleur);
 	}
 
-	ajouterFonctionClique(nomDepartement, nomFonction){
-		this.recupererDepartement(nomDepartement).ajouterFonctionClique(nomFonction);
+	ajouterFonctionClique(numDept, nomFonction){
+		this.recupererDepartement(numDept).ajouterFonctionClique(nomFonction);
 	}
 
-	ajouterBaliseTexte(nomDepartement, textAAfficher){
-		this.#svg.appendChild(this.recupererDepartement(nomDepartement).ajouterBaliseTexte(textAAfficher));
+	ajouterBaliseTexte(numDept, textAAfficher){
+		this.#svg.appendChild(this.recupererDepartement(numDept).ajouterBaliseTexte(textAAfficher));
 	}
 
 	static activerInfoBulle(){
